@@ -22,7 +22,7 @@ define(["jquery"], function($) {
     // If analytics is on..
     if (analytics=="on"){
 
-      require(['../../UDC/app/scripts/udc.js'], function (UDC) {
+      require(['../../Usage-Data-Collector/UDC/app/scripts/udc.js'], function (UDC) {
           var udc = new UDC;
           udc.startTracking("body", "click", "input");
       });
