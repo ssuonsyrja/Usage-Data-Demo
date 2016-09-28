@@ -4,23 +4,39 @@
   <title>Locking app</title>
   <script data-main="js/app" src="js/lib/require.js"></script>
 
+  <link rel="stylesheet" href="../../CollectorTests/jqwidgets/styles/jqx.base.css" type="text/css" />
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </head>
-<body>
+</head>
+<body id="body1" class='default'>
+
+  <div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: left;">
+      <div id="jqxgrid">
+      </div>
+      <div id="eventslog" style="margin-top: 30px;">
+          <div style="width: 200px; float: left; margin-right: 10px;">
+          <input value="Remove Filter" id="clearfilteringbutton" type="button" />
+          <div style="margin-top: 10px;" id='filterbackground'>Filter Background</div>
+          <div style="margin-top: 10px;" id='filtericons'>Show All Filter Icons</div>
+          </div>
+          <div style="float: left;">
+              Event Log:
+              <div style="border: none;" id="events">
+              </div>
+          </div>
+      </div>
+  </div>
   <h1>Lock it up!</h1>
   <input type="button" id="button1" value="Lock" />
   <input type="button" id="button2" value="Release" />
   <div id="status">
     <span class="label label-danger glyphicon glyphicon-eye-open" aria-hidden="true"> Open</span>
   </div>
-
 </body>
 
 </html>
