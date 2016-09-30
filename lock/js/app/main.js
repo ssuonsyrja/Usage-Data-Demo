@@ -29,7 +29,7 @@ define(["jquery", 'bootstrap', "jqxcore", "jqxdata", "jqxbuttons",
       require(['../../Usage-Data-Collector/UDC/app/scripts/udc.js'], function (UDC) {
           var udc = new UDC;
           udc.startTracking("body", "click", "input");
-          udc.startTracking("body", "mouseenter", "#paraId")
+          udc.startTracking("#jqxgrid", "filter", "")
       });
 
 
